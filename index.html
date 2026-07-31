@@ -158,16 +158,17 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 4rem;
+            gap: 2rem;
         }
 
         .hero-content {
-            flex: 1;
+            flex: 0 0 38%;
+            text-align: left;
         }
 
         .hero-visual {
-            flex: 1;
-            /* Empty div acts as spacer to push content to the left like the reference */
+            flex: 0 0 58%;
+            /* Wide spacer on the left so text is pushed to the far right */
         }
 
         /* Services */
@@ -750,13 +751,13 @@
 
         <section class="hero">
             <div class="container">
+                <!-- Empty div acts as spacer on the left where the background person is -->
+                <div class="hero-visual"></div>
                 <div class="hero-content">
                     <div class="section-subtitle">CREATIVE DESIGNER</div>
                     <h1 class="section-title">WE ARE <span>CREATIVE</span><br>DESIGNERS</h1>
                     <p class="section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
-                <!-- Empty div keeps text on the left, removing the girl image to let canvas show -->
-                <div class="hero-visual"></div>
             </div>
         </section>
 
